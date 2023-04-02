@@ -1,0 +1,18 @@
+body {
+    background-color: powderblue;
+  }
+h3 {
+    color:#800000
+}
+p {
+    color: blueviolet;
+}
+
+#differentcolor {
+    color: green;
+}
+
+
+.firstclass { color:#800000; padding-left: 50px;}
+
+
