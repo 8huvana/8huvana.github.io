@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/style.css" type="text/css" rel = "stylesheet">
+<title>Week 5</title>
+<script type="text/javascript">
+  //Variables for arrays
+var items = []
+//Function to add user info to arrays
+function insert() {
+    items.push(document.getElementById("fruit").value);
+    items.push(document.getElementById("animal").value);
+    items.push(document.getElementById("state").value);
+    items.push(document.getElementById("country").value);
+
+    Show();
+}
+//Function to display info entered from array 
+function Show() {
+    original.innerHTML = items;
+    sortedlist.innerHTML = items.sort();
+
+}
+</script>
+</head>
+<body>
+<h2>Digital Chalkboard</h2>
+<form>
+<fieldset>
+  <legend><strong>Please complete form</strong></legend><br>   
+  <label>Fruit: </label><input type="text" id="fruit" class = "all" placeholder="Mango, apple...">  
+  <label>Animal: </label><input type="text" id="animal" class = "all" placeholder="Cow, monkey..."><br>   
+  <label>State: </label><input type="text" id="state" class = "all" placeholder="Illinois, Delhi...">
+  <label>Country: </label><input type="text" id="country" class = "all" placeholder="England, Cambodia..."><br>
+  <input type="button" value="Save" onclick="insert()"><br>
+</fieldset><br>
+</form>
+<p>The original list</p>
+<div id="original"></div>
+<p>The sorted list</p>
+<div id="sortedlist"></div>
+</body>
+</html>

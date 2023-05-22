@@ -1,5 +1,6 @@
 body {
-    background-color: powderblue;
+  background: radial-gradient(ellipse at top, #12c4ff77, transparent),
+  radial-gradient(ellipse at bottom, #1d9f0c, transparent);
   }
 h3 {
     color:#800000
@@ -12,10 +13,20 @@ p {
     color: green;
 }
 
+#original {
+  color:#fff
+
+}
+
+#sortedlist {
+  color:#800000
+
+}
 
 .firstclass { color:#800000; padding-left: 50px;}
 
 p {
+    color:#000;
     width: 500px;
     line-height: 1.5;
   }
@@ -31,3 +42,12 @@ p {
     float: left;
   }
 
+legend {
+background-color: #000;
+color: #fff;
+padding: 3px 6px;
+}
+
+input {
+margin: 0.4rem;
+}
