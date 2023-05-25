@@ -29,7 +29,7 @@ function wikipedia() {
     }
   }}
 
-var map = L.map('map').setView([13.0827, 80.2707], 13);
+var map = L.map('map').setView([35.602059, 35.785487], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 maxZoom: 19,
 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
